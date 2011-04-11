@@ -106,7 +106,3 @@ rake roles
 rake upload_cookbooks
 
 echo "Done !"
-
-
-
-
