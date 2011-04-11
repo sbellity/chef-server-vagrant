@@ -1,0 +1,4 @@
+source :rubygems
+
+gem "chef", "0.10.0.beta.9"
+gem "chef-server", "0.10.0.beta.9"
