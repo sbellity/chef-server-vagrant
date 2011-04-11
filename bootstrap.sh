@@ -26,7 +26,8 @@ sudo apt-get install -y libgecode-dev
 
 # RVM Install
 bash < <(curl -s -k https://rvm.beginrescueend.com/install/rvm)
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+source "$HOME/.rvm/scripts/rvm"
 
 # Install chef dir
 export CHEF_HOME="/home/vagrant/chef-0.10/chef"
