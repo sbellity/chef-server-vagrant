@@ -33,7 +33,8 @@ source "$HOME/.rvm/scripts/rvm"
 export CHEF_HOME="/home/vagrant/chef-0.10/chef"
 
 mkdir -p $CHEF_HOME $CHEF_HOME/config $CHEF_HOME/srv $CHEF_HOME/log
-rvm install 1.8.7-p334
+rvm package install openssl
+rvm install 1.8.7-p334 --with-openssl-dir=$HOME/.rvm/usr
 rvm use 1.8.7-p334
 rvm gemset create chef-0.10
 cd $CHEF_HOME
