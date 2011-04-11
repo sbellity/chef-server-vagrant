@@ -1,9 +1,12 @@
-chef_home_dir = File.expand_path(File.dirname(__FILE__), '..')
+chef_home_dir = ENV['CHEF_HOME'] || File.expand_path(File.dirname(__FILE__), '../..')
+chef_base_port = (ENV['CHEF_BASE_PORT'] || 4000).to_i
+
+puts "Loading server.rb config with chef_home_dir = #{chef_home_dir}"
 
 log_level          :info
-log_location       "/chef/log/server.log" 
+log_location       "#{chef_home_dir}/log/server.log" 
 ssl_verify_mode    :verify_none
-chef_server_url    "http://localhost:4000"
+chef_server_url    "http://localhost:#{chef_base_port}"
 
 couchdb_database   'chef'
 
