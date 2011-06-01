@@ -1,0 +1,135 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    addressable (2.2.5)
+    amqp (0.6.7)
+      eventmachine (>= 0.12.4)
+    bunny (0.6.0)
+    chef (0.10.0.beta.9)
+      bunny (>= 0.6.0)
+      erubis
+      highline
+      json (<= 1.4.6, >= 1.4.4)
+      mixlib-authentication (>= 1.1.0)
+      mixlib-cli (>= 1.1.0)
+      mixlib-config (>= 1.1.2)
+      mixlib-log (>= 1.3.0)
+      moneta
+      net-ssh (~> 2.1.3)
+      net-ssh-multi (~> 1.0.1)
+      ohai (>= 0.5.7)
+      rest-client (< 1.7.0, >= 1.0.4)
+      treetop (~> 1.4.9)
+      uuidtools
+    chef-expander (0.10.0.beta.9)
+      amqp (~> 0.6.7)
+      bunny (>= 0.6.0)
+      bunny (~> 0.6.0)
+      em-http-request (~> 0.2.11)
+      eventmachine (~> 0.12.10)
+      fast_xs (~> 0.7.3)
+      highline (~> 1.6.1)
+      mixlib-log (>= 1.2.0)
+      rake (~> 0.8.7)
+      uuidtools (~> 2.1.1)
+      yajl-ruby (~> 0.7.7)
+    chef-server (0.10.0.beta.9)
+      chef-expander (= 0.10.0.beta.9)
+      chef-server-api (= 0.10.0.beta.9)
+      chef-server-webui (= 0.10.0.beta.9)
+      chef-solr (= 0.10.0.beta.9)
+    chef-server-api (0.10.0.beta.9)
+      dep_selector
+      dep_selector (>= 0.0.3)
+      json (>= 1.4.4, <= 1.4.6)
+      merb-assets (~> 1.1.0)
+      merb-core (~> 1.1.0)
+      merb-helpers (~> 1.1.0)
+      merb-param-protection (~> 1.1.0)
+      mixlib-authentication (>= 1.1.3)
+      thin
+      uuidtools (~> 2.1.1)
+    chef-server-webui (0.10.0.beta.9)
+      coderay
+      haml
+      json (>= 1.4.4, <= 1.4.6)
+      merb-assets (~> 1.1.0)
+      merb-core (~> 1.1.0)
+      merb-haml (~> 1.1.0)
+      merb-helpers (~> 1.1.0)
+      merb-param-protection (~> 1.1.0)
+      ruby-openid
+      thin
+    chef-solr (0.10.0.beta.9)
+      chef (= 0.10.0.beta.9)
+    coderay (0.9.7)
+    daemons (1.1.2)
+    dep_selector (0.0.5)
+    em-http-request (0.2.15)
+      addressable (>= 2.0.0)
+      eventmachine (>= 0.12.9)
+    erubis (2.7.0)
+    eventmachine (0.12.10)
+    extlib (0.9.15)
+    fast_xs (0.7.3)
+    haml (3.0.25)
+    highline (1.6.1)
+    json (1.4.6)
+    merb-assets (1.1.3)
+      merb-core (~> 1.1.3)
+    merb-core (1.1.3)
+      bundler
+      erubis (>= 2.6.2)
+      extlib (>= 0.9.13)
+      mime-types (>= 1.16)
+      rack
+      rake
+    merb-haml (1.1.3)
+      haml (>= 2.0.3)
+      merb-core (~> 1.1.3)
+    merb-helpers (1.1.3)
+      merb-core (~> 1.1.3)
+    merb-param-protection (1.1.3)
+      merb-core (~> 1.1.3)
+    mime-types (1.16)
+    mixlib-authentication (1.1.4)
+      mixlib-log
+    mixlib-cli (1.2.0)
+    mixlib-config (1.1.2)
+    mixlib-log (1.3.0)
+    moneta (0.6.0)
+    net-ssh (2.1.4)
+    net-ssh-gateway (1.0.1)
+      net-ssh (>= 1.99.1)
+    net-ssh-multi (1.0.1)
+      net-ssh (>= 1.99.2)
+      net-ssh-gateway (>= 0.99.0)
+    ohai (0.5.8)
+      extlib
+      json (<= 1.4.6, >= 1.4.4)
+      mixlib-cli
+      mixlib-config
+      mixlib-log
+      systemu
+    polyglot (0.3.1)
+    rack (1.2.2)
+    rake (0.8.7)
+    rest-client (1.6.1)
+      mime-types (>= 1.16)
+    ruby-openid (2.1.8)
+    systemu (1.2.0)
+    thin (1.2.11)
+      daemons (>= 1.0.9)
+      eventmachine (>= 0.12.6)
+      rack (>= 1.0.0)
+    treetop (1.4.9)
+      polyglot (>= 0.3.1)
+    uuidtools (2.1.2)
+    yajl-ruby (0.7.9)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  chef (= 0.10.0.beta.9)
+  chef-server (= 0.10.0.beta.9)

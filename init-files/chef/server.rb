@@ -1,4 +1,4 @@
-chef_home_dir = ENV['CHEF_HOME'] || File.expand_path(File.dirname(__FILE__), '../..')
+chef_home_dir = ENV['CHEF_HOME'] || File.expand_path(File.join(File.dirname(__FILE__), '..'))
 chef_base_port = (ENV['CHEF_BASE_PORT'] || 4000).to_i
 
 puts "Loading server.rb config with chef_home_dir = #{chef_home_dir}"
@@ -26,7 +26,8 @@ role_path          "#{chef_home_dir}/srv/roles"
 
 validation_client_name "chef-validator"
 validation_key         "#{chef_home_dir}/config/validation.pem"
-client_key             "#{chef_home_dir}/config/client.pem"
+node_name              "chef-webui"
+client_key             "#{chef_home_dir}/config/webui.pem"
 web_ui_client_name     "chef-webui"
 web_ui_key             "#{chef_home_dir}/config/webui.pem"
 

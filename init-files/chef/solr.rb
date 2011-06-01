@@ -1,4 +1,4 @@
-chef_home_dir = File.expand_path(File.dirname(__FILE__), '..')
+chef_home_dir = ENV['CHEF_HOME'] || File.expand_path(File.join(File.dirname(__FILE__), '..'))
 
 log_location "#{chef_home_dir}/log/solr.log"
 
